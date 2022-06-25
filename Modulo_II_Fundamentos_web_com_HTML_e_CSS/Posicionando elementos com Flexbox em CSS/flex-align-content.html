@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-content</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: orange;
+            padding: 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+            width: 100px;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .start{
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Comportamento Flexbox, utilizando align-content</h1>
+    <h3>SINTAXE CSS: (align-content)</h3>
+    <h2>stretch</h2>
+    <p>Comportamento padrão</p>
+    <div class="container stretch">
+        <div class="item">1 – Se ame e se valorize</div>
+        <div class="item">2 – Priorize sua saúde, mas sem neuras</div>
+        <div class="item">3 – Saiba se perdoar</div>
+        <div class="item">4 – Se afaste de pessoas pessimistas</div>
+        <div class="item">5 – Não fique pulando refeições</div>
+        <div class="item">6 – Tome um pouco de sol</div>
+        <div class="item">7 – Respire profundamente</div>
+    </div>
+
+    <h2>center</h2>
+    <p>Comportamento ao centro do container</p>
+    <div class="container center">
+        <div class="item">1 – Se ame e se valorize</div>
+        <div class="item">2 – Priorize sua saúde, mas sem neuras</div>
+        <div class="item">3 – Saiba se perdoar</div>
+        <div class="item">4 – Se afaste de pessoas pessimistas</div>
+        <div class="item">5 – Não fique pulando refeições</div>
+        <div class="item">6 – Tome um pouco de sol</div>
+        <div class="item">7 – Respire profundamente</div>
+    </div>
+
+    <h2>flex-start</h2>
+    <p>Comprime o conteúdo, alocando na parte superior do container.</p>
+    <div class="container start">
+        <div class="item">1 – Se ame e se valorize</div>
+        <div class="item">2 – Priorize sua saúde, mas sem neuras</div>
+        <div class="item">3 – Saiba se perdoar</div>
+        <div class="item">4 – Se afaste de pessoas pessimistas</div>
+        <div class="item">5 – Não fique pulando refeições</div>
+        <div class="item">6 – Tome um pouco de sol</div>
+        <div class="item">7 – Respire profundamente</div>
+    </div>
+
+    <h2>flex-end</h2>
+    <p>Comprime o conteúdo, alocando na parte inferior do container.</p>
+    <div class="container end">
+        <div class="item">1 – Se ame e se valorize</div>
+        <div class="item">2 – Priorize sua saúde, mas sem neuras</div>
+        <div class="item">3 – Saiba se perdoar</div>
+        <div class="item">4 – Se afaste de pessoas pessimistas</div>
+        <div class="item">5 – Não fique pulando refeições</div>
+        <div class="item">6 – Tome um pouco de sol</div>
+        <div class="item">7 – Respire profundamente</div>
+    </div>
+
+    <h2>space-around</h2>
+    <p>Divisão proporcional ao conteiner, denixando a proporção maior para as extremidades do container, e espaços iguais entre os elementos.</p>
+    <div class="container space-around">
+        <div class="item">1 – Se ame e se valorize</div>
+        <div class="item">2 – Priorize sua saúde, mas sem neuras</div>
+        <div class="item">3 – Saiba se perdoar</div>
+        <div class="item">4 – Se afaste de pessoas pessimistas</div>
+        <div class="item">5 – Não fique pulando refeições</div>
+        <div class="item">6 – Tome um pouco de sol</div>
+        <div class="item">7 – Respire profundamente</div>
+    </div>
+
+    <h2>space-between</h2>
+    <p>Equalização dos espaços entre os elementos, proporcionais ao tamanho do container, mantendo as extremidades próximas as bordas (inferior e superior) do container.</p>
+    <div class="container space-between">
+        <div class="item">1 – Se ame e se valorize</div>
+        <div class="item">2 – Priorize sua saúde, mas sem neuras</div>
+        <div class="item">3 – Saiba se perdoar</div>
+        <div class="item">4 – Se afaste de pessoas pessimistas</div>
+        <div class="item">5 – Não fique pulando refeições</div>
+        <div class="item">6 – Tome um pouco de sol</div>
+        <div class="item">7 – Respire profundamente</div>
+    </div>
+
+
+</body>
+</html>

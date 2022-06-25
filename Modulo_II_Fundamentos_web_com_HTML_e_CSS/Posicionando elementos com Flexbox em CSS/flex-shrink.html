@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos flex-shrink</title>
+    <Style>
+.flex-container{
+    display: flex;
+    border: 1px solid black;
+    max-width: 350px;
+    margin: 15px;
+}
+
+.item{
+    background-color: orangered;
+    margin: 5px;
+    font-size: 14px;
+    text-align: center;
+    
+}
+.flexsh0{
+    flex-shrink: 0;
+}
+.flexsh{
+    flex-shrink: 1;
+}
+.fg0{
+    flex-grow: 0;
+    flex-basis: 100px;
+}
+
+.fg1{
+    flex-grow: 1;
+}
+    </Style>
+</head>
+<body>
+    <h1>Comportamento dos elementos utilizando fle-shrink</h1>
+    <h3>SINTAXE CSS (flex-shrink)</h3>
+    <p>flex-shrink: 1 + flex-grow:1</p>
+    <div class="flex-container">
+    <div class="item flexsh fg1">A</div>
+    <div class="item flexsh fg1">B</div>
+    <div class="item flexsh fg1">C</div>
+    <div class="item flexsh fg1">D</div>
+    <div class="item flexsh fg1">E</div>
+</div>
+
+<div class="flex-container">
+    <div class="item flexsh fg1">A</div>
+    <div class="item flexsh fg1">O que faz o display flex no CSS?
+        Flexbox é uma ferramenta do CSS3 que serve para dispor os elementos dentro de um determinado container em linhas ou colunas</div>
+    <div class="item flexsh fg1">C</div>
+    <div class="item flexsh fg1">D</div>
+    <div class="item flexsh fg1">E</div>
+</div>
+
+<p>flex-shrink: 0 + flex-basis:100px</p>
+<div class="flex-container">
+<div class="item flexsh0 fg0">A</div>
+<div class="item flexsh0 fg0">B</div>
+<div class="item flexsh0 fg0">C</div>
+<div class="item flexsh0 fg0">D</div>
+<div class="item flexsh0 fg0">E</div>
+</div>
+
+</body>
+</html>

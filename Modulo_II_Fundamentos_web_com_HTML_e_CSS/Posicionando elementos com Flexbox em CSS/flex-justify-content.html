@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - justify-content</title>
+
+    <style>
+        .container{
+            max-width: 400px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+            margin-bottom: 10px;
+
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            
+        }
+        .flex-start{
+            justify-content: flex-start;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .flex-center{
+            justify-content: center;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .space-around{
+            justify-content: space-around;
+        }
+        .flex-start-column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+        .flex-end-column{
+            flex-direction: column;
+            justify-content: end;
+            min-height: 200px;
+        }
+        .flex-center-column{
+            flex-direction: column;
+            justify-content: center;
+            min-height: 200px;
+        }
+        .space-between-column{
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 200px;
+        }
+        .space-around-column{
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comportamentos dos elementos em container, delimitado em ROW</h1>
+    <h3>SINTAXE CSS: (justify-content)(flex-direction:row)</h3>
+    <h2>flex-start</h2>
+ 
+    <p>Inicio padrão de elementos em ordem natural.</p>
+    <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <h2>flex-end</h2>
+    <p>Início padrão em ordem natural com margem à esquerda.</p>
+        <section class="container flex-end">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">outro item</div>
+    </section>
+
+    <h2>flex-center</h2>
+    <p>Início padrão em ordem natural com centralização dos elementos.</p>
+    <section class="container flex-center">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <h2>space-between</h2>
+    <p>Início padrão em ordem natural distribuindo igualmente os espaços entre os elementos e mantendo as extremidades próximas à margem.</p>
+    <section class="container space-between">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <h2>space-around</h2>
+    <p>Início padrão em ordem natural distribuindo igualmente os espaços entre os elementos.</p>
+    <section class="container space-around">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <h1>Comportamentos dos elementos em container, delimitado em COLUMN</h1>
+    <h3>SINTAXE CSS: (justify-content)(flex-direction:column)</h3>
+    <h2>flex-start</h2>
+    
+    <p>Início padrão em ordem natural distribuindo igualmente os espaços entre os elementos.</p>
+    <section class="container flex-start-column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <h2>flex-end</h2>
+
+    <p>Início padrão em ordem natural distribuindo igualmente os espaços entre os elementos, porém de baixo para cima.</p>
+    <section class="container flex-end-column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <h2>flex-center</h2>
+
+    <p>Início padrão em ordem natural distribuindo igualmente os espaços entre os elementos, porém centralizando-os no meio do container.</p>
+    <section class="container flex-center-column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <h2>space-between</h2>
+
+    <p>Início padrão em ordem natural distribuindo igualmente os espaços entre os elementos, ocupando todo espaço do container, mantendo os elemntos extremos à borda do container.</p>
+    <section class="container space-between-column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Início padrão em ordem natural distribuindo igualmente os espaços entre os elementos, ocupando todo espaço do container.</p>
+    <section class="container space-around-column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+
+</body>
+</html>

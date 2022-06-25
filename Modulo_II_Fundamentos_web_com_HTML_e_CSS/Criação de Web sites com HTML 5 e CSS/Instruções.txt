@@ -1,0 +1,5 @@
+ELEMENTO HTML
+*Tag de Abertura: <h1
+*Atributo: O que você que seja feito pela função
+*Conteúdo: 
+*Tag de Fechamento: /<h1

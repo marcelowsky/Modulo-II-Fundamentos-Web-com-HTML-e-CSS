@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-items</title>
+
+    <style>
+       
+    .container{
+        max-width: 350px;
+        border: 1px solid black;
+        display: flex;
+    }
+    .item{
+        background-color: blueviolet;
+        margin: 5px;
+        color: white;
+        text-align: center;
+        flex: 1;
+
+    }
+    .flex{
+        flex: 1;
+    }
+    .center{
+        align-items: center;
+    }
+    .stretch{
+        align-items: stretch;
+    }
+    .start{
+        align-items: flex-start;
+    }
+    .end{
+        align-items: flex-end;
+    }
+    .baseline{
+        align-items: baseline;
+    }
+    .start-column{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .end-column{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .center-column{
+        flex-direction: column;
+        align-items: center;
+    }
+    .baseline-column{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .central{
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        flex: 0;
+        padding: 20px; 
+
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Estrutura básica e prática com align-items</h1>
+    <h2>1. Comportamento do align-items no modo ROW</h2>
+    <h3>SINTAXE CSS (align-items)</h3>
+   
+    <h2>align-center</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada pela altura do container. Ou seja, ao inserir mais conteúdo ao elemento ele adaptará o tamanho respeitando a altura os limites do container. Mantendo os elementos no centro do container</p>
+    <section class="container center flex">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        
+    </section>
+
+    <h2>align-stretch</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada com base no tamanho do maior elemento. Ou seja o tamanho dos elementos serão iguais ao maior elemento dentro do container.</p>
+    <section class="container center stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        
+    </section>
+
+    <h2>flex-start</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada com base no tamanho do conteúdo, iniciando na parte superior do container.</p>
+    <section class="container center start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        
+    </section>
+
+    <h2>flex-end</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada com base no tamanho do conteúdo, iniciando na parte inferior do container.</p>
+    <section class="container center end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        
+    </section>
+
+    <h2>baseline</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada com base na última linha delimitada pelo elemento 1. Ou seja os demais elementos aumentarão a partir desta referencia.</p>
+    <section class="container center baseline">
+        <div class="item"></br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 marcelo da silva arruda marcelo da silva arruda</div>
+        
+    </section>
+
+    <h2>2. Comportamento do align-items no modo COLUMN</h2>
+
+    <h2>flex-start-column</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada com base no tamanho do conteúdo, iniciando na parte superior esquerda do container.</p>
+    <section class="container center start-column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+        
+    </section>
+
+    <h2>end-column</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada com base no tamanho do conteúdo, iniciando na parte direita superior do container.</p>
+    <section class="container center end-column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+
+        </section>
+
+        <h2>center-column</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada pela altura do container. Ou seja, ao inserir mais conteúdo ao elemento ele adaptará o tamanho respeitando a altura os limites do container, mantendo os elementos ao centro do container.</p>
+    <section class="container center center-column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit marcelo da silva arruda marceloda silva arruda amet</div>
+        <div class="item">Item 3</div>    
+    </section>
+
+    <h2>baseline</h2>
+    <p>Ordem natural dos elementos, onde a proporcionalidade é respeitada com base na última linha delimitada pelo elemento 1. Ou seja os demais elementos aumentarão a partir desta referencia.</p>
+    <section class="container center baseline-column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 marcelo da silva arruda marcelo da silva arruda</div>
+        
+    </section>
+
+    <h2>alinhamento central à tela</h2>
+    <p>Recurso para alinhar os elementos no centro da tela. Independente do tamanho do conteúdo dos elementos. Ele se adaptará a este conteúdo respeitando o tamanho do container.</p>
+    <section class="container central">
+        <div class="item">To align things in the inline direction, use the properties which begin with justify. Use justify-content to distribute space between grid tracks, and justify-items or justify-self to align items inside their grid area in the inline direction.</div>
+                
+    </section>
+</body>
+</html>

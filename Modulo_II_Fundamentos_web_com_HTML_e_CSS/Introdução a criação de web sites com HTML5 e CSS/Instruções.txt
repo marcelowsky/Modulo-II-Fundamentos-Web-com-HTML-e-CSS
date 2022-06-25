@@ -1,0 +1,78 @@
+Introdução a Programação para Internet
+
+História 
+1969 EUA - Arpanet- Aprimoramento militar na Guerra fria
+1987 EUA - Liberado para uso comercial
+1988 BRASIL - Restrito à universidades
+1994 BRASIL - Uso comercial
+*Primeiro Dominio criado - symbolics.com, em 1985 
+*Primeiro Blog - Open Diary, 1994 - Claudio Pinhanez - Brasileiro trabalhava no MIT
+*Primeira compra pela Internet - Cd Sting (Ten Summoner's Tales) 1994
+*Site mais antigo em atividade - nordu.net desde 1985
+
+Termo Chaves
+*Download/upload
+*Cache: arquivos salvos no computador quando se acessa um site
+*host: servidor
+*HTML: linguagem de marcação da internet (não faz funções)
+*HTTP:Protocolo da Internet
+*Link: é uma ligação
+*Url: Endereço de um site
+*Keylogger: Software malicioso que registra ações do teclado
+*Phishing: Software malicioso para roubar dados atraves de e-mail e msg
+*Bullying: Ameaças, difamação através de meio eletrônico
+*Cookies: Registros no computador utilizados geralmente em ofertas
+*Click bait: Publicações/msg o qual a intenção é que o usuário "clique"
+
+REDES
+*Backbone: estruturas que gerenciam as conexões da internet e redes
+*Provedor de acesso:Empresas que vendem acessos aos Backbones
+*Provedor de Serviço: Fibra ótica - Rádio - Satélite - Móvel
+*www - DNS - IP - Classes de redes - 127.0.0.1 Local host
+
+TCP/IP: Protocolos de comunicação entre computadores
+* 4 Camadas:
+1.Física (placa de rede)
+2.Rede (IP)
+3.Transporte (TCP/UDP)
+4. Aplicação (FTP,SMTP, HTTP)
+
+UDP: Rápido/não confiável/"Carro do Ovo"/Livestream
+TCP: Voltado a conexão/Handshake/Integridade/App msg texto
+
+PORTAS:Identificação das conexões e qual o tipo de informação trafegará (22/23/25/443/ etc)
+
+MODEMS: Modula e demodula sinais.
+ROTEADOR: Distribuidor de sinais para um ou mais dispositivos.
+SWITCHES: Distribuidor de sinais "inteligente"
+Portas utilizada pelo Gmail: IMAP
+
+CELULAR INTERNET E OUTROS DISPOSITIVOS
+Dados Móveis
+BROWSER SITES APLICATIVOS WEB-SERVER
+*Browser: Identifica linguagens de marcação
+*Hoje em dia não há mais diferença entre site e aplicativo - App é uma maneira de acessar o site através do celular
+*Os sistemas de pagamento geralmente são terceirizados.
+*O Brasil é o único país o qual existe o pagamento por boleto.
+*Web-server pode ser:
+-Estático: Servidor físico onde estão armazenados os softwares, bco dados, etc.
+-Dinâmico: Refere-se aos softwares que estão no servidor físico.
+
+STACKS
+*É um conjunto de softwares necessários e suficientes para executar um programa
+*Capacidade e limitação e limitação de performance
+*Dev precisa saber as limitações do ambiente das ferramentas disponíveis
+*Estatégia de negócios
+
+FRONT END
+*Parte da frente: Site, software, aplicativo, web-service, Interface (UI - UX)
+BACK END
+*Parte de trás: Servidores, banco de dados (Oracle, Protocolos de comunicação, Java)
+FULLSTACK
+*Trabalha em todas as camadas das tecnologias de desenvolvimento/execução de um app
+
+XAMPP: https://www.apachefriends.org/pt_br/index.html
+
+Apache configurações máquina: Abrir as configurações, no txt procurar pelo diretório (DocumentRoot). Alterar o caminho para a pasta de projetos criada. 
+
+Aprendizagem para criação de sites: https://www.w3schools.com

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos flex-align-self</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+            
+        }
+        .align-container{
+            align-items: center;
+        }
+
+        .item{
+            background-color: brown;
+            color: blue;
+            text-align: center;
+            margin: 5px;
+            font-size: 24px;
+        }
+        .align-center{
+            align-self: center;
+        }
+        .align-start{
+            align-self: flex-start;
+        }
+        .align-end{
+            align-self: flex-end;
+        }
+        .alingn-stretch{
+            align-self: stretch;
+        }
+        .align-baseline{
+            align-self: baseline;
+        }
+        .align-auto{
+            align-self: auto;
+        }
+        .direction{
+            flex-direction: column;
+        }
+            </style>
+</head>
+<body>
+    <h1>Comportamento dos elementos utilizando align-self</h1>
+    <h3>SINTAXE CSS: (align-self)</h3>
+    <h2>align-self: flex-center</h2>
+<p>ROW</p>
+    <section class="flex-container align-container">
+        <div class="item align-auto">1</div>
+        <div class="item align-auto">he align-self CSS property overrides a grid or flex item's.</div>
+        <div class="item align-auto">34</div>
+        <div class="item align-auto">45</div>
+        <div class="item align-auto">567</div>
+    </div>
+  
+</section>
+
+<section class="flex-container">
+    <div class="item align-center">1</div>
+    <div class="item align-stretch">he align-self CSS property overrides a grid or flex item's.</div>
+    <div class="item align-start">34</div>
+    <div class="item align-baseline">45</div>
+    <div class="item align-end">567</div>
+</div>
+
+</section>
+
+<P>COLUMN</P>
+<section class="flex-container align-container direction">
+    <div class="item align-auto">1</div>
+    <div class="item align-auto">he align-self CSS property overrides a grid or flex item's.</div>
+    <div class="item align-auto">34</div>
+    <div class="item align-auto">45</div>
+    <div class="item align-auto">567</div>
+</div>
+
+</section>
+
+<section class="flex-container direction">
+<div class="item align-center">1</div>
+<div class="item align-stretch">he align-self CSS property overrides a grid or flex item's.</div>
+<div class="item align-start">34</div>
+<div class="item align-baseline">45</div>
+<div class="item align-end">567</div>
+</div>
+
+</section>
+</body>
+</html>
