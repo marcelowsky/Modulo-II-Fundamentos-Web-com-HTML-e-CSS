@@ -20,7 +20,7 @@ body {
 .instagram-wrapper{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 60%;
     min-height: 100vh;
     border: #0000;
@@ -42,7 +42,7 @@ body {
 
 .instagram-continue{
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: space-around;
     flex-direction: column;
     width: 50%;
@@ -51,7 +51,7 @@ body {
 }
 .group{
     display: flex;
-    align-items: center;
+    
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
@@ -60,8 +60,11 @@ body {
     
 }
 .logo-instagram{
-    height: 9rem;
+    height: 5rex;
     padding-top: 5px;
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 2px;
     
 }
 .profile-foto{
@@ -72,7 +75,7 @@ body {
     overflow: hidden;     
 }
 .profile-foto img{
-    height: 8rem;
+    height: 15rem;
 }
 .group:nth-child(1){
     min-height: 25rem;
@@ -92,12 +95,6 @@ body {
 .get-the-app{
     margin-top: 50px;
     
-}
-.instagram-login{
-    background-color: #0095f6;
-    color: #ffffff;
-    padding: 8px;
-    border-radius: 4px;
 }
 
 .instagram-logout{
@@ -122,20 +119,13 @@ body {
     color: #0095f6;
 }
 .face img{
-    width: 5%;
-    border-radius: 8px;
+    height: 5rex;
+    padding-top: 5px;
+    float:inline-start;
+    margin-bottom: 5px;
+    margin-left: 50px;
 }
 
-.get-the-app{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1.3rem 0;
-    margin-top: 5px;
-
-}
 
 .download{
     display: flex;
@@ -166,9 +156,11 @@ footer{
         
 }
 .contact-list{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    height: 5rex;
+    padding-top: 5px;
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 50px;
 }
 .contact-list img{
     width: 5%;
